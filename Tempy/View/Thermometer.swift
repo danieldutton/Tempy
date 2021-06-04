@@ -15,9 +15,9 @@ struct Thermometer: View {
         }
             
             Section(header: Text("Result")) {
-                Text("\(scales[0]) - \(0.0)") //is unicide front or back?
-                Text("\(scales[1]) - \(0.0)")
-                Text("\(scales[2]) - \(0.0)")
+                Text("\(scales[0]) - \(binding)") //is unicode front or back?
+                Text("\(scales[1]) - \((binding + 459.67) * 5 / 9)")
+                Text("\(scales[2]) - \((binding - 32) * 5 / 9)")
             }
             
             Section(content: {
@@ -26,8 +26,6 @@ struct Thermometer: View {
                     .padding()
             }).frame(height: 300)
         }
-        
-        
     }
 }
 
@@ -35,4 +33,8 @@ struct Thermometer_Previews: PreviewProvider {
     static var previews: some View {
         Thermometer()
     }
+}
+
+class TempConverter {
+    
 }
