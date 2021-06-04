@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A59FCE35266A834400378003 /* TempyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FCE34266A834400378003 /* TempyApp.swift */; };
-		A59FCE37266A834400378003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FCE36266A834400378003 /* ContentView.swift */; };
 		A59FCE39266A835000378003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59FCE38266A835000378003 /* Assets.xcassets */; };
 		A59FCE3C266A835000378003 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59FCE3B266A835000378003 /* Preview Assets.xcassets */; };
+		A59FCE44266A852200378003 /* Thermometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FCE36266A834400378003 /* Thermometer.swift */; };
+		A59FCE46266A863500378003 /* TemperatureValueSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FCE45266A863500378003 /* TemperatureValueSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A59FCE31266A834300378003 /* Tempy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tempy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59FCE34266A834400378003 /* TempyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempyApp.swift; sourceTree = "<group>"; };
-		A59FCE36266A834400378003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A59FCE36266A834400378003 /* Thermometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thermometer.swift; sourceTree = "<group>"; };
 		A59FCE38266A835000378003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A59FCE3B266A835000378003 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A59FCE3D266A835000378003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59FCE45266A863500378003 /* TemperatureValueSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureValueSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,8 @@
 		A59FCE33266A834300378003 /* Tempy */ = {
 			isa = PBXGroup;
 			children = (
+				A59FCE43266A84C400378003 /* View */,
 				A59FCE34266A834400378003 /* TempyApp.swift */,
-				A59FCE36266A834400378003 /* ContentView.swift */,
 				A59FCE38266A835000378003 /* Assets.xcassets */,
 				A59FCE3D266A835000378003 /* Info.plist */,
 				A59FCE3A266A835000378003 /* Preview Content */,
@@ -67,6 +69,15 @@
 				A59FCE3B266A835000378003 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A59FCE43266A84C400378003 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A59FCE36266A834400378003 /* Thermometer.swift */,
+				A59FCE45266A863500378003 /* TemperatureValueSlider.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A59FCE37266A834400378003 /* ContentView.swift in Sources */,
+				A59FCE44266A852200378003 /* Thermometer.swift in Sources */,
+				A59FCE46266A863500378003 /* TemperatureValueSlider.swift in Sources */,
 				A59FCE35266A834400378003 /* TempyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
